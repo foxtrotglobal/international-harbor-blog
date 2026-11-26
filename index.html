@@ -205,6 +205,33 @@
       letter-spacing: 0.04em;
       color: rgba(185, 194, 214, 0.85);
     }
+    figure.photo {
+      margin: 0 0 1.65rem;
+      padding: 0;
+    }
+    figure.photo img {
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      border-radius: 4px;
+      border: 1px solid rgba(217, 162, 38, 0.35);
+      background: var(--navy-900);
+    }
+    figure.photo figcaption {
+      font-family: var(--mono);
+      font-size: 0.68rem;
+      letter-spacing: 0.04em;
+      color: var(--mist);
+      margin: 0.45rem 0 0;
+      line-height: 1.45;
+    }
+    figure.photo.hero { margin: 0 0 1.85rem; }
+    .ask figure.photo { margin: 0 0 1.15rem; }
+    .ask figure.photo img { border-color: rgba(217, 162, 38, 0.45); }
+    .ask figure.photo figcaption { color: rgba(185, 194, 214, 0.85); }
+
     @media (min-width: 640px) {
       .donate { width: auto; min-width: 16rem; }
       main { padding-top: 3rem; padding-bottom: 4rem; }
@@ -223,15 +250,32 @@
     <p class="date">November 26, 2026</p>
     <hr class="rule">
 
+    <figure class="photo hero">
+      <img src="photo-thanksgiving-table.jpg" width="1280" height="720" alt="A warm Thanksgiving table with a roasted turkey, autumn leaves, candles, and place settings, with no one seated yet." fetchpriority="high">
+    </figure>
+
     <p class="lead">Today we are grateful for the tables that are full, and for the families who get to spend this day together, safe and at home. That is a blessing worth naming out loud.</p>
 
     <p>We also hold close the families who are missing someone today. Not every seat is filled. Some loved ones are missing, or were taken, and the people who love them are still waiting. If that is your table this year, you are not forgotten.</p>
+
+    <figure class="photo">
+      <img src="photo-empty-chair.jpg" width="1280" height="720" alt="An empty wooden chair at a set place, with a single candle lit beside the unused plate." loading="lazy">
+    </figure>
 
     <h2>The work we do</h2>
 
     <p>International Harbor Foundation was founded in 2013 to help locate and recover missing and trafficked people, and to stand with their families. We support the work of building the intelligence and evidence that can bring someone home, the rescue operations that recover them, and the aftercare — safe housing, care, and support — that helps survivors rebuild a life of their own.</p>
 
+    <figure class="photo">
+      <img src="photo-lighthouse-dawn.jpg" width="1280" height="720" alt="A white lighthouse standing at the edge of a calm harbor as the sun rises." loading="lazy">
+    </figure>
+
     <div class="ask">
+
+      <figure class="photo">
+        <img src="photo-night-ride.jpg" width="1280" height="720" alt="A tree-lined walkway at night, lit by streetlamps, with a car’s headlights approaching on the road." loading="lazy">
+      </figure>
+
       <h2>Help fund Harbor Safe Ride</h2>
       <p>Harbor Safe Ride is International Harbor’s program to provide free late-night rides for college students, along with scheduled rides and airport rides. It starts at TCU as a pilot and is meant to expand to campuses across Fort Worth, so no student has to walk home alone at night, or get into a stranger’s car, because there is no other way. If the pilot works here, the plan is to take Harbor Safe Ride to campuses beyond Fort Worth, one campus at a time.</p>
       <p>A gift to this campaign supports Harbor Safe Ride and the foundation’s work to find people, bring them home, and stay with them afterward. If you can give, please do. If you can share this page, that helps too.</p>
@@ -249,6 +293,7 @@
     <div class="inner">
       <p class="help">If you or someone you know needs help: in immediate danger, call 911. National Human Trafficking Hotline: <a href="tel:18883737888">1-888-373-7888</a>. National Domestic Violence Hotline: <a href="tel:18007997233">1-800-799-7233</a>. Missing child? NCMEC: <a href="tel:18008435678">1-800-THE-LOST</a> (1-800-843-5678).</p>
       <p class="fine"><a href="https://intlharbor.org">intlharbor.org</a> · Learn more or share this campaign at <a href="https://gofund.me/fadfdee7c">gofund.me/fadfdee7c</a></p>
+      <p class="fine" style="margin-top:0.75rem">Photographs created for International Harbor Foundation.</p>
     </div>
   </footer>
 </body>
